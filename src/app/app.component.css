@@ -1,0 +1,227 @@
+.header{
+    height: 20px;
+    padding: 30px;
+    background-color: #c60d0d;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    padding-left: 15%;
+}
+
+.Container {
+    width: 75%;
+    background-color: #ffffff;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  }
+
+  .header1 {
+    display: flex;
+    
+  }
+
+  .header1 img {
+    width: 30px;
+    height: 30px;
+    padding: 30px;
+  }
+
+  #header1 h3 {
+    margin: 0;
+    font-size: 1px;
+  }
+
+  .header1 p {
+    margin: 0;
+    font-size: 10px;
+    color: #888;
+  }
+
+  .choice-chips-container {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0 50px 0;
+  }
+
+  .choice-chip {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    color: #333;
+  }
+
+  .choice-chip.active {
+    background-color: #c60d0d;
+    color: white;
+    border-color: #c60d0d;
+  }
+
+  .toggles-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+  }
+
+  .ret {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .ret span {
+    font-size: 14px;
+  }
+
+
+  /* Estilização do switch */
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  .switch {
+    position: relative;
+    background-color: #ccc;
+    width: 50px;
+    height: 30px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+  }
+
+  .slider {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    transition: all 0.5s ease-in-out;
+    
+  }
+
+  #chk:checked + .switch {
+    background-color: #c60d0d;
+  }
+
+  #chk:checked + .switch .slider {
+    transform: translateX(25px);
+  }
+
+  #chk2:checked + .switch {
+    background-color: #c60d0d;
+  }
+
+  #chk2:checked + .switch .slider {
+    transform: translateX(25px);
+  }
+
+
+
+
+  .ContainerFinal{
+    margin: auto;
+    width: 75%;
+  }
+
+  .ContainerFinal button{
+    width: 20%;
+    border-radius: 5px;
+    justify-content: space-between;
+    margin-left: 30px;
+
+  }
+
+
+
+
+/* Layout geral */
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 2rem;
+    background-color: #ccc;
+  }
+  
+  /* Títulos */
+  h1 {
+    font-size: 1.75;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  
+  h2 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Inputs e selects */
+  input[type="text"],
+  input[type="date"],
+  input[type="number"],
+  select {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    box-sizing: border-box;
+    
+  }
+  
+  /* Checkboxes e botões */
+  label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+   
+  }
+  
+  button {
+    border: none;
+    border-radius: 0.375rem;
+    background-color: #c60d0d;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    justify-content: flex-end;
+  }
+  
+  button:hover {
+    background-color: #c60d0da5;
+  }
+  
+  /* Layout do bloco */
+  section {
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Lista de questões */
+  ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-top: 1rem;
+  }
+  
