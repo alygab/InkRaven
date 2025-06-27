@@ -27,6 +27,14 @@ export class AppComponent {
 
   formatoSaida = 'pdf';
 
+  
+  selectChip(selectedChip: any) {
+    document.querySelectorAll('.choice-chip').forEach(chip => {
+      chip.classList.remove('active');
+    });
+    selectedChip.classList.add('active');
+  }
+
   adicionarQuestao() {
     if (this.questao.trim()) {
       this.questoes.push(this.questao.trim());

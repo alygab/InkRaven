@@ -58,17 +58,9 @@
     </div>
 
     <div class="choice-chips-container">
-      <div class="choice-chip" onclick="selectChip(this)">PDF Pronto</div>
-      <div class="choice-chip active" onclick="selectChip(this)">Word Editável</div>
-      <div class="choice-chip" onclick="selectChip(this)">Ambos</div>
-      <script>
-        function selectChip(selectedChip) {
-          document.querySelectorAll('.choice-chip').forEach(chip => {
-            chip.classList.remove('active');
-          });
-          selectedChip.classList.add('active');
-        }
-      </script>
+      <div class="choice-chip" (click)="selectChip($event.currentTarget)">PDF Pronto</div>
+      <div class="choice-chip active" (click)="selectChip($event.currentTarget)">Word Editável</div>
+      <div class="choice-chip" (click)="selectChip($event.currentTarget)">Ambos</div>
     </div>
 
     <div class="toggles-container">
