@@ -4,13 +4,12 @@
     background-color: #c60d0d;
     color: white;
     font-weight: bold;
-    width: 100%;
     padding-left: 15%;
 }
 
 .Container {
     width: 75%;
-    background-color: #ffffff;
+    background-color: var(--box-background);
     margin: 50px auto;
     padding: 30px;
     border-radius: 20px;
